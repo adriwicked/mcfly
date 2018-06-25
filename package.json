@@ -1,13 +1,20 @@
 {
   "name": "mcfly",
   "version": "1.0.0",
-  "description": "",
+  "description": "Twitter like API",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.1.6"
   },
-  "author": "",
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  },
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon -e js,hbs app",
+    "seeds": "node data/seeds"
+  },
+  "author": "Adrian Moreno",
   "license": "ISC"
 }
